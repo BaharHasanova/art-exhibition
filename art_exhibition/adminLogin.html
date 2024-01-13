@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration form</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans' />
+    <link rel="stylesheet" href="reg-style.css" />
+    <script src="reg-validation.js"></script>
+  </head>
+  <body>
+    <p class="tip"></p>
+    <div class="cont">
+      <div class="form sign-in">
+        <h2>Welcome Admin</h2>
+        <form id="login-form" onsubmit="return validateLoginForm()" action="adminPage.html">
+          <label>
+            <span>Username</span>
+            <input type="text" id="username" required/>
+          </label>
+          <label>
+            <span>Password</span>
+            <input type="password" id="password" required/>
+          </label>
+          <p class="forgot-pass">Forgot password?</p>
+          <button type="submit" class="submit">Sign In</button>
+          <button type="button" class="signInback">Back</button>
+        </form>
+      </div>
+      </div>
+    </div>
+    <script src="reg-script.js"></script>
+  </body>
+</html>

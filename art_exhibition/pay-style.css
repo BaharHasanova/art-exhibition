@@ -1,0 +1,79 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-top: 10px;
+}
+
+select, input[type="date"], input[type="number"] {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #f4f4f4;
+	margin-top: 5px;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.submit {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #3498db;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+.back{
+    padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #3498db;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+#payment-status {
+	margin-top: 20px;
+}
+
+.payment-successful {
+	color: green;
+	font-weight: bold;
+}
+
+.payment-unsuccessful {
+	color: red;
+	font-weight: bold;
+}

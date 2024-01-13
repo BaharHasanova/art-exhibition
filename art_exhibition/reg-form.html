@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration form</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans' />
+    <link rel="stylesheet" href="reg-style.css" />
+    <script src="reg-validation.js"></script>
+  </head>
+  <body>
+    <p class="tip"></p>
+    <div class="cont">
+      <div class="form sign-in">
+        <h2>Welcome back,</h2>
+        <form action="login-form.php"  method="POST"  onsubmit="return validateLoginForm()">
+          <label>
+            <span>Username</span>
+            <input type="text" name="username" required/>
+          </label>
+          <label>
+            <span>Password</span>
+            <input type="password" name="password" required/>
+          </label>
+          <p class="forgot-pass">Forgot password?</p>
+          <button type="submit" class="submit">Sign In</button>
+          <button type="button" class="signInback">Back</button>
+        </form>
+      </div>
+      <div class="sub-cont">
+        <div class="img">
+          <div class="img__text m--up">
+            <h2>New here?</h2>
+            <p>Sign up and discover great amount of new opportunities!</p>
+          </div>
+          <div class="img__text m--in">
+            <h2>One of us?</h2>
+            <p>If you already have an account, just sign in. We've missed you!</p>
+          </div>
+          <div class="img__btn">
+            <span class="m--up">Sign Up</span>
+            <span class="m--in">Sign In</span>
+          </div>
+        </div>
+        <div class="form sign-up">
+          <h2>Create your unique </h2>
+          <form id="signup-form" action="reg-signup.php" method="POST" onsubmit="return validateSignupForm()">
+            <label>
+              <span>Username</span>
+              <input type="text" name="signup-username" required/>
+              <span id="username-error" class="error"></span>
+            </label>
+            <label>
+              <span>Password</span>
+              <input type="password" name="signup-password" required/>
+            </label>
+            <button type="submit" class="submit">Sign Up</button>
+            <button type="button" class="signUpback">Back</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="reg-script.js"></script>
+  </body>
+</html>

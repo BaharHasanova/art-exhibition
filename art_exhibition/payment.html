@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Payment Page</title>
+	<link rel="stylesheet" href="pay-style.css">
+</head>
+<body>
+	<form method="POST" action="payment.php">
+	<div class="container">
+		<h1>Event Registration</h1>
+		<div class="event-options">
+			<label for="username">User Name:</label>
+			<input type="text" name="username" id="username">
+			<label for="event">Event Name:</label>
+			<select id = "event" name="event">
+				<option value="" selected disabled>Select the Event</option>
+				<option value="Van Gogh Alive" data-price="100">Van Gogh Alive</option>
+				<option value="Of Spaces In Between" data-price="55">Of Spaces In Between</option>
+				<option value="The World of Tim Burton" data-price="75">The World of Tim Burton</option>
+			</select>
+			<label for="date">Event Date:</label>
+			<input type="date" id="date" name="date">
+		
+		</div>
+        <button type="submit" class="submit">Register Event</button>
+        <button type="button" class="back">Back</button>
+		<div id="payment-result"></div>
+	</div>
+
+	<script src="pay-script.js"></script>
+	</form>
+</body>
+</html>

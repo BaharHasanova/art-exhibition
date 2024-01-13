@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+    <style>
+        /* navigation bar */
+        .topnav {
+          overflow: hidden;
+          background-color:black;
+        }
+        .topnav a {
+          float: right;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        body{
+            background-color: #333;
+        }
+        /* Background image 1*/
+        .image1 {
+            background-image: linear-gradient(0deg, grey, rgba(0,0,0,0.5)), url("media/img1.jpg");
+            background-color: #cccccc;
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .image1-text{
+            text-align: left;
+            position: absolute;
+            right: 50%; 
+            left: 5%;
+            color: white;
+            font-family:'Comic Sans MS';
+        }
+        .ticket{
+            position: absolute;
+            top: 45%;
+            right: 0;
+            left: 150%;
+        }
+
+        /* Background image 2*/
+        .image2 {
+            background-image: linear-gradient(0deg, grey, rgba(0,0,0,0.5)), url("media/img2.jpg");
+            background-color: #cccccc;
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .image2-text{
+            text-align: right;
+            position: absolute;
+            right: 5%; 
+            left: 50%;
+            color: white;
+            font-family:'Comic Sans MS';
+        }
+        .ticket2{
+            position: absolute;
+            top: 45%;
+            left: -90%; 
+        }
+
+        /* Background image 3*/
+        .image3 {
+            background-image: linear-gradient(0deg, grey, rgba(0,0,0,0.5)), url("media/img3.jpeg");
+            background-color: #cccccc;
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="pr.html">Profile</a>
+        <a href="index.html">Home</a>
+    </div>
+    <h1 style="color:red"><marquee behavior="scroll" direction="left">DON'T MISS OUR UPCOMING ART EXHIBITIONS!!!!</marquee></h1>
+    <!-- First Event -->
+    <div class= "image1">
+        <div class= "image1-text">     
+    <h1 style="font-size: 50px; font-family:cooper black;">Van Gogh Alive Experience</h1>
+    <p>The "Van Gogh Alive" experience is a multimedia exhibition that brings the work of Vincent 
+        van Gogh to life through immersive and interactive displays. The exhibition uses cutting-edge 
+        technology to showcase the Dutch artist's paintings, drawings, and sketches in a dynamic and 
+        engaging way.</p>
+    <a href="payment.html">
+    <img class="ticket" src="media/bkTickets.png" alt="BookTicket" width="180" height="180" style="float:right;"></img>
+    </a>
+    <p><b>DATE:</b> 25/4/2023 - 28/4/2023</p>
+    <p><b>TIME:</b> 10am - 6pm</p>
+    <p><b>VENUE:</b> Pavilion Bukit Jalil</p>
+    </div>
+    </div>
+
+    <!-- Second event -->
+    <section id="section2"> 
+    <div class= "image2">
+        <div class= "image2-text">
+    <h1 style="font-size: 50px; font-family:cooper black;">Of Spaces In Between </h1>
+    <p>The pairing of technology and art may bring to mind NFTs and AI-generated images, but it can also be used 
+        to span spaces for a single art exhibition to be at more than one place at the same time. The clever use 
+        of augmented reality has enabled one such art exhibition to take place at two different states, in two 
+        galleries, to showcase the same pairs of artworks simultaneously. </p>
+    <a href="payment.html">
+    <img class="ticket2" src="media/bkTickets.png" alt="BookTicket" width="180" height="180" style="float:left;"></img>
+    </a>
+    <p><b>DATE:</b> 28/5/2023 - 30/5/2023</p>
+    <p><b>TIME:</b> 10am - 6pm</p>
+    <p><b>VENUE:</b> Hin Bus Depot in Penang and ZHAN Art Space in Petaling Jaya </p>
+    </div>
+    </div>
+
+    <!-- Thrid Event -->
+    <div class= "image3">
+        <div class= "image1-text">
+    <h1 style="font-size: 50px; font-family:cooper black;">The World of Tim Burton</h1>
+    <p> For the first time in South East Asia, the mesmerizing world tour exhibition of Tim Burton makes its 
+        debut in Kuala Lumpur, Malaysia! The World of Tim Burton has categorized Tim Burton’s extensive career 
+        of five decades into 10 thematic sections - each section is composed of paintings, drawings, photographs 
+        and videos, media arts and etc. This exhibition will give every fan a chance to bask in the ‘Burtonesque’ 
+        creations of his cinematic work from childhood to the present day. </p>
+    <a href="payment.html">
+    <img class="ticket" src="media/bkTickets.png" alt="BookTicket" width="180" height="180" style="float:right;"></img>
+    </a>
+    <p><b>DATE:</b> 15/6/2023 - 18/6/2023</p>
+    <p><b>TIME:</b> 10am - 6pm</p>
+    <p><b>VENUE:</b>Pavilion Bukit Jalil </p>
+    </div>
+    </div>
+</body>
+</html>
